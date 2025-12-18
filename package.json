@@ -6,7 +6,8 @@
   "scripts": {
     "start": "dotenvx run -- node dist/index.js",
     "dev": "dotenvx run -- node .",
-    "build": "babel src -d dist"
+    "build": "babel src -d dist",
+    "test": "dotenvx run -- jest"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,8 @@
   "devDependencies": {
     "@babel/cli": "^7.28.3",
     "@babel/core": "^7.28.5",
-    "@babel/preset-env": "^7.28.5"
+    "@babel/preset-env": "^7.28.5",
+    "jest": "^30.2.0",
+    "supertest": "^7.1.4"
   }
 }
