@@ -1,4 +1,5 @@
-const express = require("express");
+import express from "express";
+
 const app = express();
 
 const message = process.env.MESSAGE || "Hello, World!";
@@ -9,4 +10,4 @@ app.get("/", (req, res) => {
   res.send({ message, timestamp });
 });
 
-module.exports = app;
+export default app

@@ -1,5 +1,5 @@
-const app = require("../src/app.js");
-const request = require("supertest");
+import app from "../src/app.js";
+import request from "supertest";
 
 const expectedMessage = process.env.MESSAGE || "Hello, World!";
 

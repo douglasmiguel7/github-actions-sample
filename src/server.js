@@ -1,7 +1,9 @@
-const app = require("./app.js");
+import app from "./app.js";
 
-const server = app.listen(3000, () => {
-  console.log("Server running");
+const port = process.env.PORT || 3000;
+
+const server = app.listen(port, () => {
+  console.log(`Server running on port ${port}`);
 });
 
 export default server;
